@@ -1,4 +1,4 @@
-# khmer-quotes-chrome-extension
+# khmer-quotes-extension
 
 > Render Qoutes in **Khmer** everytime you open new tabs.
 
