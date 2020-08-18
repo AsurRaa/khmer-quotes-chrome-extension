@@ -1,11 +1,14 @@
 import React from "react";
+import ParticleLayout from "../components/layouts/ParticleLayout";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>helloWOrld</h1>
-    </div>
-  );
+    return (
+        <div>
+            <div style={{position: "relative"}}>
+                <ParticleLayout/>
+            </div>
+        </div>
+    );
 }
 
 export default App;
