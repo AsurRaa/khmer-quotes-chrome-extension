@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import ParticleLayout from "../components/layouts/ParticleLayout";
 import datas from "../data/quotes.json";
-
-interface quotesInterface {
-  author: string;
-  quoteNameEN: string;
-  quoteNameKH: string;
-}
-
+import moment from "moment";
+import { quotesInterface } from "../interface/interface";
+const githubIcon = require("../assets/logo-github.svg");
 function App() {
   const [quotes, setQuotes] = useState<quotesInterface>();
+  const [clock, setClock] = useState();
   useEffect(() => {
     let random = Math.floor(Math.random() * datas.length);
     setQuotes(datas[random]);
+
+    let timing = moment().locale("be").format("MMMM Do YYYY, h:mm:ss a");
+    console.log(timing);
   }, []);
 
   return (
@@ -34,6 +34,22 @@ function App() {
         <p style={{ fontSize: "1rem", fontWeight: 500, textAlign: "center" }}>
           {quotes?.author}
         </p>
+      </div>
+      <div style={{ position: "absolute", bottom: "1%", left: "1%" }}>
+        <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={() =>
+              window.open(
+                "https://github.com/AsurRaa/khmer-quotes-extension",
+                "_blank"
+              )
+            }
+          >
+            <img src={githubIcon} width={40} height={40} />
+          </div>
+          <div>{}</div>
+        </div>
       </div>
     </>
   );

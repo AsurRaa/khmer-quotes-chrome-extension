@@ -10,6 +10,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "google-translate": "^3.0.0",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
@@ -17,6 +19,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
+    "parse": "node parse/index.ts",
     "start": "react-scripts start",
     "build": "bash build.sh",
     "test": "react-scripts test",

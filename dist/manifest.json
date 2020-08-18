@@ -9,5 +9,8 @@
   "browser_action": {
     "default_icon": "khmer.png",
     "default_popup": "index.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
   }
 }
