@@ -9,11 +9,11 @@
 - **Idea**
 
 ## Compatibility
-- [ ] -    Chrome and Chromium base browser.
+- [x] -    Chrome and Chromium base browser.
 - [ ] -    Firefox  (**coming soon**)
 - [ ] -    Safari (**coming soon**)
 
 
 ## More 
-- **Author**: **@LyhourChhen**
+- **Author** - **@LyhourChhen**
 - 2020 - **@AsurRaa**
