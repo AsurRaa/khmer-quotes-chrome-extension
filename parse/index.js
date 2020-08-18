@@ -1,6 +1,5 @@
 const datas = require("../src/data/sample-data.json");
-const fs = require("fs");
-
+// const fs = require("fs");
 
 let newData = datas.map((data) => {
   return {

@@ -19,7 +19,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "parse": "node parse/index.ts",
+    "parse": "node parse/index.js",
     "start": "react-scripts start",
     "build": "bash build.sh",
     "test": "react-scripts test",
