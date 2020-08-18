@@ -9,7 +9,6 @@ interface quotesInterface {
 }
 
 function App() {
-  let x = "hi";
   const [quotes, setQuotes] = useState<quotesInterface>();
   useEffect(() => {
     let random = Math.floor(Math.random() * datas.length);
@@ -17,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <>
       <div style={{ position: "fixed", zIndex: -1 }}>
         <ParticleLayout />
       </div>
@@ -29,18 +28,14 @@ function App() {
           transform: "translate(-50%, -50%)",
         }}
       >
-        <div>
-          <p
-            style={{ fontSize: "1.5rem", fontWeight: 400, textAlign: "center" }}
-          >
-            <p>{quotes?.quoteNameKH}</p>
-          </p>
-          <p style={{ fontSize: "1rem", fontWeight: 500, textAlign: "center" }}>
-            {quotes?.author}
-          </p>
-        </div>
+        <p style={{ fontSize: "1.5rem", fontWeight: 400, textAlign: "center" }}>
+          <p>{quotes?.quoteNameKH}</p>
+        </p>
+        <p style={{ fontSize: "1rem", fontWeight: 500, textAlign: "center" }}>
+          {quotes?.author}
+        </p>
       </div>
-    </div>
+    </>
   );
 }
 
