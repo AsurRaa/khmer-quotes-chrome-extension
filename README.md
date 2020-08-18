@@ -4,14 +4,16 @@
 
 ## PR and Contribution welcome
 
-- Quotes 
-- Coding 
-- Idea
+- **Quotes**
+- **Coding**
+- **Idea**
 
 ## Compatibility
-- Chrome && Chromium base browser
-- Firefox (coming soon)
-- Safari (coming soon)
+- [ ] -    Chrome and Chromium base browser.
+- [ ] -    Firefox  (**coming soon**)
+- [ ] -    Safari (**coming soon**)
+
 
 ## More 
+- **Author**: **@LyhourChhen**
 - 2020 - **@AsurRaa**
