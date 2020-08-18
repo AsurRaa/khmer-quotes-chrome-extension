@@ -15,7 +15,7 @@
 ### Manual 
 - `clone project`
 - `Chome > Setting > Extension > Enable Developer Mode > Load Unpacked from clone repo / dist > Refresh Page > You will see `
-### Auto 
+### Automatic
 - [ ] - Chrome Store  (**coming soon**)
 
 ## Compatibility
