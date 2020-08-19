@@ -3,7 +3,7 @@ import { GithubPicker } from "react-color";
 import Button from "@atlaskit/button";
 const Setting: FC = (props) => {
   let [toggle, setToggle] = useState<boolean>(true);
-  let [bgColor, setBgColor] = useState<string>("white");
+
   React.useEffect(() => {
     let localStorageParticle = localStorage.getItem("isParticle");
     if (localStorageParticle === "true") {
@@ -49,7 +49,8 @@ const Setting: FC = (props) => {
           <div style={{ display: "flex", alignItems: "center" }}>
             <Button
               onClick={() => {
-                localStorage.clear();
+                localStorage.setItem("bgColor", "white");
+                localStorage.setItem("isParticle", "false");
                 window.location.reload();
               }}
             >

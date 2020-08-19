@@ -5,6 +5,7 @@ import moment from "moment";
 import "moment/locale/km";
 import { quotesInterface } from "../interface/interface";
 import Popup from "@atlaskit/popup";
+import Button from "@atlaskit/button";
 import Setting from "../components/Setting";
 
 const githubIcon = require("../assets/logo-github.svg");
@@ -63,8 +64,8 @@ function App() {
           content={() => <Setting />}
           isOpen={openSetting}
           trigger={(triggerProps) => (
-            // @ts-ignore
-            <img
+            <Button
+              alt="logo"
               id="popup-trigger"
               {...triggerProps}
               onClick={() => setOpenSetting(!openSetting)}
@@ -92,7 +93,7 @@ function App() {
               )
             }
           >
-            <img src={githubIcon} width={40} height={40} />
+            <img src={githubIcon} width={40} height={40} alt="setting" />
           </div>
           <div style={{}}>
             <p style={{ fontSize: 12, padding: 0, margin: 0 }}>
