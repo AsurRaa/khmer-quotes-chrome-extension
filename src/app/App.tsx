@@ -4,6 +4,8 @@ import datas from "../data/quotes.json";
 import moment from "moment";
 import "moment/locale/km";
 import { quotesInterface } from "../interface/interface";
+import Popup from "@atlaskit/popup";
+import Setting from "../components/Setting";
 
 const githubIcon = require("../assets/logo-github.svg");
 const settingIcon = require("../assets/cog-outline.svg");
@@ -11,7 +13,7 @@ const settingIcon = require("../assets/cog-outline.svg");
 function App() {
   const [quotes, setQuotes] = useState<quotesInterface>();
   const [timer, setTimer] = useState();
-  const [openPopover, setOpenPopover] = useState(false);
+  const [openSetting, setOpenSetting] = useState<boolean>(false);
   useEffect(() => {
     let random = Math.floor(Math.random() * datas.length);
     setQuotes(datas[random]);
@@ -45,11 +47,21 @@ function App() {
         </p>
       </div>
       <div style={{ position: "absolute", bottom: "1%", right: "1%" }}>
-        <img
-          style={{ cursor: "pointer" }}
-          src={settingIcon}
-          width={30}
-          height={30}
+        <Popup
+          content={() => <Setting />}
+          isOpen={openSetting}
+          trigger={(triggerProps) => (
+            // @ts-ignore
+            <img
+              id="popup-trigger"
+              {...triggerProps}
+              onClick={() => setOpenSetting(!openSetting)}
+              style={{ cursor: "pointer" }}
+              src={settingIcon}
+              width={30}
+              height={30}
+            />
+          )}
         />
       </div>
       <div style={{ position: "absolute", bottom: "1%", left: "1%" }}>
