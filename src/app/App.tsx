@@ -14,7 +14,17 @@ function App() {
   const [quotes, setQuotes] = useState<quotesInterface>();
   const [timer, setTimer] = useState();
   const [openSetting, setOpenSetting] = useState<boolean>(false);
+  const [isParticle, setIsParticle] = useState<boolean | null>(true);
+  let [bgColor, setBgColor] = useState<string | null>("white");
   useEffect(() => {
+    setBgColor(localStorage.getItem("bgColor"));
+    let localStorageParticle = localStorage.getItem("isParticle");
+    if (localStorageParticle === "true") {
+      setIsParticle(true);
+    } else {
+      setIsParticle(false);
+    }
+
     let random = Math.floor(Math.random() * datas.length);
     setQuotes(datas[random]);
     const interval = setInterval(() => {
@@ -28,8 +38,10 @@ function App() {
 
   return (
     <>
-      <div style={{ position: "fixed", zIndex: -1 }}>
-        <ParticleLayout />
+      <div
+        style={{ position: "fixed", zIndex: -1, backgroundColor: `${bgColor}` }}
+      >
+        {isParticle === true ? <ParticleLayout /> : null}
       </div>
       <div
         style={{
