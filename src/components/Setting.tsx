@@ -1,6 +1,5 @@
 import React, { FC, useState } from "react";
 import { GithubPicker } from "react-color";
-import Button from "@atlaskit/button";
 const Setting: FC = (props) => {
   let [toggle, setToggle] = useState<boolean>(true);
 
@@ -47,7 +46,7 @@ const Setting: FC = (props) => {
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <Button
+            <button
               onClick={() => {
                 localStorage.setItem("bgColor", "white");
                 localStorage.setItem("isParticle", "false");
@@ -55,7 +54,7 @@ const Setting: FC = (props) => {
               }}
             >
               Reset
-            </Button>
+            </button>
           </div>
         </div>
       </div>
