@@ -13,8 +13,8 @@
 ## Installation 
 
 ### Manual 
-- `clone project`
-- `Chome > Setting > Extension > Enable Developer Mode > Load Unpacked from clone repo / dist > Refresh Page > You will see `
+- Download build file from here [khmer-quotes-extension](https://github.com/LyhourChhen/khmer-quotes-extension/releases/tag/v1)
+- `Open your browser > Extension Setting > enable developer mode > unzip > load from download zip file`
 ### Automatic
 - [ ] - Chrome Store  (**coming soon**)
 
