@@ -4,7 +4,6 @@ import datas from "../data/quotes.json";
 import moment from "moment";
 import "moment/locale/km";
 import { quotesInterface } from "../interface/interface";
-import Popup from "@atlaskit/popup";
 import Setting from "../components/Setting";
 
 const githubIcon = require("../assets/logo-github.svg");
@@ -47,7 +46,7 @@ function App() {
         </p>
       </div>
       <div style={{ position: "absolute", bottom: "1%", right: "1%" }}>
-        <Popup
+        {/* <Popup
           content={() => <Setting />}
           isOpen={openSetting}
           trigger={(triggerProps) => (
@@ -62,7 +61,7 @@ function App() {
               height={30}
             />
           )}
-        />
+        /> */}
       </div>
       <div style={{ position: "absolute", bottom: "1%", left: "1%" }}>
         <div style={{ display: "flex", justifyContent: "flex-start" }}>
