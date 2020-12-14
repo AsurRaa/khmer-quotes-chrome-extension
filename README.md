@@ -25,5 +25,4 @@
 
 
 ## More 
-- **Author** - **@LyhourChhen**
-- 2020 - **@AsurRaa**
+- **LyhourChhen**
