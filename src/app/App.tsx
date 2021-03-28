@@ -27,9 +27,9 @@ function App() {
 
   return (
     <>
-      <div>
+<!--       <div>
         <Modal isOpen={openSetting} children={<Setting />} />
-      </div>
+      </div> -->
       <div style={{ position: "fixed", zIndex: -1 }}>
         <ParticleLayout />
       </div>
