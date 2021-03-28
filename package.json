@@ -1,36 +1,43 @@
 {
   "name": "khmer-qoutes-chrome-extension",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "@lyhourchhen",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-color": "^3.0.4",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-modal": "^3.10.6",
-    "@types/styled-components": "^5.1.2",
-    "google-translate": "^3.0.0",
-    "moment": "^2.27.0",
-    "react": "^16.13.1",
-    "react-color": "^2.18.1",
-    "react-dom": "^16.13.1",
-    "react-modal": "^3.11.2",
-    "react-scripts": "3.4.3",
-    "react-tsparticles": "^1.17.8",
-    "styled-components": "^5.1.1",
-    "typescript": "^3.9.7"
-  },
   "scripts": {
     "parse": "node parse/index.js",
     "start": "react-scripts start",
     "build": "bash build.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "building": "react-scripts build"
+    "building": "react-scripts build",
+    "serve": "serve -s dist"
+  },
+  "dependencies": {
+    "@asurraa/teamouy": "^1.0.8",
+    "google-translate": "^3.0.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.12.1",
+    "react-scripts": "4.0.3",
+    "react-tsparticles": "^1.24.2",
+    "styled-components": "^5.2.1",
+    "stylelint": "^13.12.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^13.0.16",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-color": "^3.0.4",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-modal": "^3.12.0",
+    "@types/styled-components": "^5.1.9",
+    "serve": "^11.3.2",
+    "typescript": "^4.2.3"
   },
   "eslintConfig": {
     "extends": "react-app"
