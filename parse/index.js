@@ -1,6 +1,6 @@
-const datas = require("../src/data/sample-data.json");
+const data = require("../src/data/sample-data.json");
 
-let newData = datas.map((data) => {
+let newData = data.map((data) => {
   return {
     quoteNameEN: data.quote,
     quoteNameKH: data.quote,
