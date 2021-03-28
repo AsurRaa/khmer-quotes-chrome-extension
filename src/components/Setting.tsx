@@ -1,6 +1,6 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useState, useEffect, VFC } from "react";
 import { GithubPicker } from "react-color";
-const Setting: FC = (props) => {
+const Setting: VFC = (props) => {
   const [toggle, setToggle] = useState<boolean>(true);
   useEffect(() => {
     let localStorageParticle = localStorage.getItem("isParticle");
