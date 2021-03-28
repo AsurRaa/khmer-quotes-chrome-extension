@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.eee62201.chunk.css",
-    "main.js": "./static/js/main.b93e562a.chunk.js",
-    "main.js.map": "./static/js/main.b93e562a.chunk.js.map",
+    "main.js": "./static/js/main.c083f432.chunk.js",
+    "main.js.map": "./static/js/main.c083f432.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.e1306d53.js",
     "runtime-main.js.map": "./static/js/runtime-main.e1306d53.js.map",
-    "static/js/2.4ca250bc.chunk.js": "./static/js/2.4ca250bc.chunk.js",
-    "static/js/2.4ca250bc.chunk.js.map": "./static/js/2.4ca250bc.chunk.js.map",
+    "static/js/2.2fa33efb.chunk.js": "./static/js/2.2fa33efb.chunk.js",
+    "static/js/2.2fa33efb.chunk.js.map": "./static/js/2.2fa33efb.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.eee62201.chunk.css.map": "./static/css/main.eee62201.chunk.css.map",
-    "static/js/2.4ca250bc.chunk.js.LICENSE.txt": "./static/js/2.4ca250bc.chunk.js.LICENSE.txt",
+    "static/js/2.2fa33efb.chunk.js.LICENSE.txt": "./static/js/2.2fa33efb.chunk.js.LICENSE.txt",
     "static/media/cog-outline.de75653e.svg": "./static/media/cog-outline.de75653e.svg",
     "static/media/logo-github.bdb19859.svg": "./static/media/logo-github.bdb19859.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e1306d53.js",
-    "static/js/2.4ca250bc.chunk.js",
+    "static/js/2.2fa33efb.chunk.js",
     "static/css/main.eee62201.chunk.css",
-    "static/js/main.b93e562a.chunk.js"
+    "static/js/main.c083f432.chunk.js"
   ]
 }
