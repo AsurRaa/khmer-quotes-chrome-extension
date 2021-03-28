@@ -7,6 +7,7 @@
     "parse": "node parse/index.js",
     "start": "react-scripts start",
     "build": "bash build.sh",
+    "build:ci": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "building": "react-scripts build",
