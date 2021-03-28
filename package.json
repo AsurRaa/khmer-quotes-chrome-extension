@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "@lyhourchhen",
   "private": true,
-  "homepage": "./",
+  "homepage": ".",
   "scripts": {
     "parse": "node parse/index.js",
     "start": "react-scripts start",
