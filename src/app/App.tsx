@@ -6,9 +6,8 @@ import "moment/locale/km";
 import { quotesInterface } from "../interface/interface";
 import Setting from "../components/Setting";
 import Modal from "react-modal";
-
-const githubIcon = require("../assets/logo-github.svg");
-const settingIcon = require("../assets/cog-outline.svg");
+import githubIcon from "../assets/logo-github.svg";
+import settingIcon from "../assets/cog-outline.svg";
 
 function App() {
   const [quotes, setQuotes] = useState<quotesInterface>();

@@ -11,5 +11,4 @@ build() {
     rm -rf build
     mv dist/index.html dist/index.html
 }
-
 build

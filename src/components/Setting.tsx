@@ -1,9 +1,8 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import { GithubPicker } from "react-color";
 const Setting: FC = (props) => {
-  let [toggle, setToggle] = useState<boolean>(true);
-
-  React.useEffect(() => {
+  const [toggle, setToggle] = useState<boolean>(true);
+  useEffect(() => {
     let localStorageParticle = localStorage.getItem("isParticle");
     if (localStorageParticle === "true") {
       setToggle(true);

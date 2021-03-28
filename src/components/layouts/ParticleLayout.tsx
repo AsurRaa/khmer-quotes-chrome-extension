@@ -1,4 +1,3 @@
-import React from "react";
 import Particles from "react-tsparticles";
 
 const ParticleLayout = (props: any) => {
